@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgraound"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/circle_profile_registration"
+        android:src="@drawable/dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:civ_border_color="@color/blue_800"
+        app:civ_border_width="2dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Name"
+                    android:textColorHint="@color/white"
+                    android:ems="10"
+                    android:paddingTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/name"
+                    android:drawableTint="@color/white"
+                    android:drawablePadding="12dp"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/white"
+                    android:id="@+id/editText2"
+                    android:layout_weight="1" />
+
+            <View
+                android:id="@+id/UnderLine2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/editText1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/white" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Email"
+                android:textColorHint="@color/white"
+                android:drawableTint="@color/white"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/email"
+                android:ems="10"
+                android:paddingTop="20dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:textColor="@color/white"
+                android:id="@+id/editText3" />
+            <View
+                android:id="@+id/UnderLine3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/editText1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/white" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Password"
+                android:textColorHint="@color/white"
+                android:drawableTint="@color/white"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/password"
+                android:textColor="@color/white"
+                android:ems="10"
+                android:paddingTop="20dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:id="@+id/editText4" />
+            <View
+                android:id="@+id/UnderLine4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/editText1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/white" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Department"
+                android:textColorHint="@color/white"
+                android:drawableTint="@color/white"
+                android:drawableLeft="@drawable/depertment"
+                android:drawablePadding="12dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:ems="10"
+                android:paddingTop="20dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/editText5" />
+            <View
+                android:id="@+id/UnderLine5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/editText1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/white" />
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/radio_pirates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Faculty"
+                    android:textColor="@color/white"
+                    android:buttonTint="#ffffff"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/radio_ninjas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student"
+                    android:buttonTint="#ffffff"
+                    android:textColor="@color/white"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Roll number"
+                android:textColorHint="@color/white"
+                android:drawableTint="@color/white"
+                android:ems="10"
+                android:paddingTop="20dp"
+                android:drawablePadding="12dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/rollnumber"
+                android:textColor="@color/white"
+                android:background="@android:color/transparent"
+                android:id="@+id/editText6" />
+            <View
+                android:id="@+id/UnderLine6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/editText1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/white" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="faculty"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:paddingTop="20dp"
+                android:drawableTint="@color/white"
+                android:drawablePadding="12dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/faculty"
+                android:textColor="@color/white"
+                android:background="@android:color/transparent"
+                android:id="@+id/editText7" />
+            <View
+                android:id="@+id/UnderLine7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/editText1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/white" />
+
+            <Button
+                android:text="Register"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_800"
+                android:id="@+id/button"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

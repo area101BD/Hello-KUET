@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/library_reminder"
+            android:icon="@drawable/reminder"
+            android:title="Reminder For Library" />
+        <item
+            android:id="@+id/class_routine"
+            android:icon="@drawable/routine"
+            android:title="Class routine" />
+        <item
+            android:id="@+id/Information_portal"
+            android:icon="@drawable/information"
+            android:title="Information Portal" />
+        <item
+            android:id="@+id/My_Contacts"
+            android:icon="@drawable/contact"
+            android:title="My Contacts" />
+    </group>
+      <item android:title="Notice Board">
+        <menu>
+            <item
+                android:id="@+id/ct_notification"
+                android:icon="@drawable/ct"
+                android:title="Notice for CT" />
+            <item
+                android:id="@+id/lab_notification"
+                android:icon="@drawable/labreport"
+                android:title="Notice for Lab Work" />
+            <item
+                android:id="@+id/result_board"
+                android:icon="@drawable/lab"
+                android:title="Notice for Result" />
+        </menu>
+    </item>
+    <item android:title="Emergency Informations">
+
+        <menu>
+            <item
+                android:id="@+id/Dream"
+                android:icon="@drawable/dream"
+                android:title="Dream Blood donation" />
+            <item
+                android:id="@+id/Medical_centre"
+                android:icon="@drawable/medical"
+                android:title="Medical Centre" />
+            <item
+                android:id="@+id/offline_map_info"
+                android:icon="@drawable/map"
+                android:title="My Map" />
+        </menu>
+    </item>
+
+</menu>
